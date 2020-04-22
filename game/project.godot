@@ -8,15 +8,122 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node",
+"class": "BattleAction",
+"language": "GDScript",
+"path": "res://source/battle/actions/battle_action.gd"
+}, {
+"base": "Node2D",
+"class": "BattleSession",
+"language": "GDScript",
+"path": "res://source/battle/battle_session.gd"
+}, {
+"base": "Resource",
+"class": "CharacterStatus",
+"language": "GDScript",
+"path": "res://source/fighter/character_status.gd"
+}, {
+"base": "Node",
+"class": "EnemyGroup",
+"language": "GDScript",
+"path": "res://source/fighter/encounters/enemy_group.gd"
+}, {
+"base": "Position2D",
+"class": "Fighter",
+"language": "GDScript",
+"path": "res://source/fighter/fighter.gd"
+}, {
+"base": "Node",
+"class": "FighterAI",
+"language": "GDScript",
+"path": "res://source/fighter/ai/fighter_ai.gd"
+}, {
+"base": "Control",
+"class": "FighterIcon",
+"language": "GDScript",
+"path": "res://source/battle/ui/turn_order/fighter_icon.gd"
+}, {
+"base": "Resource",
+"class": "GrowthStatus",
+"language": "GDScript",
+"path": "res://source/fighter/character_growth.gd"
+}, {
+"base": "StatBar",
+"class": "HealthBar",
+"language": "GDScript",
+"path": "res://source/battle/ui/bars/health/health_bar.gd"
+}, {
+"base": "Node2D",
+"class": "Map",
+"language": "GDScript",
+"path": "res://source/map/map.gd"
+}, {
+"base": "Node2D",
+"class": "Party",
+"language": "GDScript",
+"path": "res://source/party/party.gd"
+}, {
+"base": "Node2D",
+"class": "PartyMember",
+"language": "GDScript",
+"path": "res://source/party/party_member.gd"
+}, {
+"base": "Resource",
+"class": "Skill",
+"language": "GDScript",
+"path": "res://source/battle/skill.gd"
+}, {
+"base": "BattleAction",
+"class": "SkillAction",
+"language": "GDScript",
+"path": "res://source/battle/actions/skill_action.gd"
+}, {
+"base": "StatBar",
+"class": "StaminaBar",
+"language": "GDScript",
+"path": "res://source/battle/ui/bars/stamina/stamina_bar.gd"
+}, {
+"base": "Control",
+"class": "StatBar",
+"language": "GDScript",
+"path": "res://source/battle/ui/bars/stat_bar.gd"
+}, {
+"base": "YSort",
+"class": "TurnQueue",
+"language": "GDScript",
+"path": "res://source/battle/turn_queue.gd"
+} ]
 _global_script_class_icons={
-
+"BattleAction": "",
+"BattleSession": "",
+"CharacterStatus": "",
+"EnemyGroup": "",
+"Fighter": "",
+"FighterAI": "",
+"FighterIcon": "",
+"GrowthStatus": "",
+"HealthBar": "",
+"Map": "",
+"Party": "",
+"PartyMember": "",
+"Skill": "",
+"SkillAction": "",
+"StaminaBar": "",
+"StatBar": "",
+"TurnQueue": ""
 }
 
 [application]
 
-config/name="game"
+config/name="RPG Sandbox"
+run/main_scene="res://sandbox_session.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
 
 [rendering]
 

@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://source/fighter/fighter.gd" type="Script" id=1]
+[ext_resource path="res://source/battle/actions/combat_actions.gd" type="Script" id=2]
+[ext_resource path="res://source/battle/actions/action.tscn" type="PackedScene" id=3]
+[ext_resource path="res://source/battle/actions/attack.gd" type="Script" id=4]
+[ext_resource path="res://assets/combat/action/icon battle pedang.png" type="Texture" id=5]
+[ext_resource path="res://source/battle/actions/guard.gd" type="Script" id=6]
+[ext_resource path="res://assets/combat/action/icon battle defend.png" type="Texture" id=7]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Node
+
+func get_children():
+	var all_skills = .get_children()
+	if len(all_skills) == 0:
+		return []
+	
+	var fighter = get_parent() as Fighter
+	var stats = fighter.stats as CharacterStatus
+"
+
+[node name="fighter" type="Position2D"]
+script = ExtResource( 1 )
+
+[node name="skin" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -32 )
+
+[node name="anchor" type="Position2D" parent="."]
+position = Vector2( 0, -80 )
+
+[node name="actions" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="attack" parent="actions" instance=ExtResource( 3 )]
+script = ExtResource( 4 )
+icon = ExtResource( 5 )
+description = "Attacks the target"
+
+[node name="guard" parent="actions" instance=ExtResource( 3 )]
+script = ExtResource( 6 )
+icon = ExtResource( 7 )
+
+[node name="skills" type="Node" parent="."]
+script = SubResource( 1 )
+
+[node name="drops" type="Node" parent="."]
+
+[node name="ai" type="Node" parent="."]
+
+[node name="bars" type="VBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+custom_constants/separation = 16
+__meta__ = {
+"_edit_use_anchors_": false
+}
