@@ -69,7 +69,7 @@ func play_turn() -> void:
 		return
 	
 	action = yield(fighter.ai.choose_action(fighter, enemies), "completed")
-	action = yield(fighter.ai.choose_target(fighter, action, enemies), "completed")
+	targets = yield(fighter.ai.choose_target(fighter, action, enemies), "completed")
 	fighter.selected = false
 	
 	if targets != []:

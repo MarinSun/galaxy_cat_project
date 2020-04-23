@@ -116,7 +116,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="RPG Sandbox"
+config/name="Sol Terra"
 run/main_scene="res://sandbox_session.tscn"
 config/icon="res://icon.png"
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://source/party/party.gd" type="Script" id=1]
 [ext_resource path="res://source/party/party_member.tscn" type="PackedScene" id=2]
@@ -14,8 +14,6 @@
 [ext_resource path="res://assets/turn_icons/b-san.png" type="Texture" id=12]
 [ext_resource path="res://assets/turn_icons/d-chan.png" type="Texture" id=13]
 [ext_resource path="res://assets/turn_icons/c-sama.png" type="Texture" id=14]
-[ext_resource path="res://source/battle/actions/guard.gd" type="Script" id=15]
-[ext_resource path="res://source/battle/actions/action.tscn" type="PackedScene" id=16]
 [ext_resource path="res://source/fighter/ai/party_input.gd" type="Script" id=17]
 
 [sub_resource type="AtlasTexture" id=1]
@@ -112,10 +110,7 @@ turn_icon = ExtResource( 11 )
 frames = SubResource( 4 )
 animation = "idle"
 
-[node name="skip" parent="a-kun/fighter/actions" index="0" instance=ExtResource( 16 )]
-script = ExtResource( 15 )
-
-[node name="ai" parent="a-kun/fighter" index="4"]
+[node name="ai" parent="a-kun/fighter" index="5"]
 script = ExtResource( 17 )
 
 [node name="b-san" parent="." instance=ExtResource( 2 )]
@@ -129,7 +124,7 @@ turn_icon = ExtResource( 12 )
 frames = SubResource( 8 )
 animation = "idle"
 
-[node name="ai" parent="b-san/fighter" index="4"]
+[node name="ai" parent="b-san/fighter" index="5"]
 script = ExtResource( 17 )
 
 [node name="c-sama" parent="." instance=ExtResource( 2 )]
@@ -143,7 +138,7 @@ turn_icon = ExtResource( 14 )
 frames = SubResource( 12 )
 animation = "idle"
 
-[node name="ai" parent="c-sama/fighter" index="4"]
+[node name="ai" parent="c-sama/fighter" index="5"]
 script = ExtResource( 17 )
 
 [node name="d-chan" parent="." instance=ExtResource( 2 )]
@@ -157,7 +152,7 @@ turn_icon = ExtResource( 13 )
 frames = SubResource( 16 )
 animation = "idle"
 
-[node name="ai" parent="d-chan/fighter" index="4"]
+[node name="ai" parent="d-chan/fighter" index="5"]
 script = ExtResource( 17 )
 
 [editable path="a-kun"]

@@ -8,5 +8,5 @@ func choose_action(fighter: Fighter, fighters: Array = []):
 
 func choose_target(fighter: Fighter, action: BattleAction, fighters: Array = []):
 	interface.select_targets(fighters)
-	return yield(interface, "target_selected")
+	return yield(interface, "targets_selected")
 
