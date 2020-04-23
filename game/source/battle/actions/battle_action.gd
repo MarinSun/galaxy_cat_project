@@ -7,6 +7,7 @@ onready var actor: Fighter = get_parent().get_owner()
 
 export (Texture) var icon = load("res://assets/combat/action_frame.png")
 export (String) var description = "Action"
+export (int, "Self", "Single", "Multiple") var target = 0
 
 func initialize(fighter: Fighter) -> void:
 	actor = fighter

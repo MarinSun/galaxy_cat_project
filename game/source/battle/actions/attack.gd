@@ -1,5 +1,10 @@
 extends BattleAction
 
 func execute(targets):
-	print("attack")
+	assert(initialized)
+	if actor.party_member and not targets:
+		return false
+	
+	print("yes")
+	
 	return true

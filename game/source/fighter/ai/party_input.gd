@@ -7,6 +7,13 @@ func choose_action(fighter: Fighter, fighters: Array = []):
 	return yield(interface, "action_selected")
 
 func choose_target(fighter: Fighter, action: BattleAction, fighters: Array = []):
-	interface.select_targets(fighters)
-	return yield(interface, "targets_selected")
+	match action.target:
+		0:
+			interface.select_targets([fighter])
+			return yield(interface, "targets_selected")
+		_:
+			interface.select_targets(fighters)
+			return yield(interface, "targets_selected")
+#	interface.select_targets(fighters)
+#	return yield(interface, "targets_selected")
 

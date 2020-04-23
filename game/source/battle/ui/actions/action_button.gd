@@ -14,9 +14,14 @@ func initialize(action: BattleAction, target_position: Vector2) -> void:
 	disabled = not action.can_use()
 	if disabled:
 		modulate = Color("#555555")
+	
+	connect("mouse_entered", self, "enter_focus")
+	connect("mouse_exited", self, "exit_focus")
+	connect("focus_entered", self, "enter_focus")
+	connect("focus_exited", self, "exit_focus")
 
 func enter_focus():
-	pass
+	raise()
 
 func exit_focus():
 	pass

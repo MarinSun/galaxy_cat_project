@@ -21,7 +21,7 @@ export var party_member: bool = false
 export var turn_icon: Texture
 
 func _ready():
-	pass
+	selectable = true
 
 func initialize():
 	skin.play()
@@ -38,3 +38,6 @@ func set_selectable(value):
 	selectable = value
 	if not selectable:
 		set_selected(false)
+
+func has_point(point: Vector2):
+	print(point)

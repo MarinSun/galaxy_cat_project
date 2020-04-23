@@ -48,6 +48,15 @@ func close() -> void:
 	yield(tween, "tween_completed")
 	queue_free()
 
+func cancel_animation() -> void:
+	tween.stop_all()
+	for button_index in buttons.get_child_count():
+		var button = buttons.get_child(button_index)
+		button.rect_scale = button.unfocused_scale
+		button.rect_position = button.target_position
+	var first_button = buttons.get_child(0)
+	first_button.grab_focus
+
 func _unhandled_input(event: InputEvent) -> void:
 	var direction: = 0
 	if event.is_action_pressed("ui_right"):
@@ -60,6 +69,9 @@ func _unhandled_input(event: InputEvent) -> void:
 	
 	accept_event()
 	var in_focus: Button = get_focus_owner()
+	
+	if tween.is_active():
+		cancel_animation()
 	
 	var next_button_index = (in_focus.get_index() + direction + buttons.get_child_count()) % buttons.get_child_count()
 	buttons.get_child(next_button_index).grab_focus()
