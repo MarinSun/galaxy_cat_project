@@ -28,6 +28,8 @@ script = ExtResource( 1 )
 position = Vector2( 0, -32 )
 script = ExtResource( 8 )
 
+[node name="tween" type="Tween" parent="skin"]
+
 [node name="anchor" type="Position2D" parent="."]
 position = Vector2( 0, -80 )
 

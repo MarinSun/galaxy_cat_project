@@ -19,7 +19,6 @@ func play_turn(action: BattleAction, targets: Array):
 		pass
 	action.initialize(active_fighter)
 	var hit_target = yield(action.execute(targets), "completed")
-	print(hit_target)
 	if not hit_target:
 		last_action_canceled = true
 		return

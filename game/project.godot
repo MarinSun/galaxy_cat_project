@@ -54,6 +54,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://source/battle/ui/bars/health/health_bar.gd"
 }, {
+"base": "Reference",
+"class": "Hit",
+"language": "GDScript",
+"path": "res://source/battle/hit.gd"
+}, {
 "base": "Node2D",
 "class": "Map",
 "language": "GDScript",
@@ -109,6 +114,7 @@ _global_script_class_icons={
 "FighterIcon": "",
 "GrowthStatus": "",
 "HealthBar": "",
+"Hit": "",
 "Map": "",
 "Party": "",
 "PartyMember": "",

@@ -27,6 +27,7 @@ func initialize():
 	skin.play()
 	actions.initialize(skills.get_children())
 	stats = stats.copy()
+	stats.connect("health_depleted", self, "_on_health_depleted")
 
 func is_able_to_play() -> bool:
 	return stats.health > 0
@@ -38,6 +39,15 @@ func set_selectable(value):
 	selectable = value
 	if not selectable:
 		set_selected(false)
+
+func take_damage(hit):
+	stats.take_damage(hit)
+	if stats.health > 0:
+		pass
+
+func _on_health_depleted():
+	selectable = false
+	emit_signal("dead", self)
 
 func has_point(point: Vector2):
 	print(point)

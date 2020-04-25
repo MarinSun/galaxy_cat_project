@@ -17,5 +17,8 @@ func execute(targets: Array):
 	print("%s missing overwrite of the execute method" % name)
 	return false
 
+func return_to_start_position():
+	yield(actor.skin.return_to_start(), "completed")
+
 func can_use() -> bool:
 	return true
