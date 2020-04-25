@@ -5,6 +5,9 @@ func execute(targets):
 	if actor.party_member and not targets:
 		return false
 	
-	print("yes")
-	
+	actor.move_to()
+
+#	for target in targets:
+#		print("YES")
+
 	return true

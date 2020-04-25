@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://source/party/party.gd" type="Script" id=1]
 [ext_resource path="res://source/party/party_member.tscn" type="PackedScene" id=2]
@@ -14,7 +14,6 @@
 [ext_resource path="res://assets/turn_icons/b-san.png" type="Texture" id=12]
 [ext_resource path="res://assets/turn_icons/d-chan.png" type="Texture" id=13]
 [ext_resource path="res://assets/turn_icons/c-sama.png" type="Texture" id=14]
-[ext_resource path="res://source/party/skin.gd" type="Script" id=15]
 [ext_resource path="res://source/fighter/ai/party_input.gd" type="Script" id=17]
 
 [sub_resource type="AtlasTexture" id=1]
@@ -35,6 +34,11 @@ animations = [ {
 "loop": true,
 "name": "idle",
 "speed": 3.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "New Anim",
+"speed": 5.0
 } ]
 
 [sub_resource type="AtlasTexture" id=5]
@@ -69,11 +73,28 @@ region = Rect2( 64, 0, 64, 64 )
 atlas = ExtResource( 6 )
 region = Rect2( 128, 0, 64, 64 )
 
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 6 )
+region = Rect2( 0, 192, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 6 )
+region = Rect2( 64, 192, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 6 )
+region = Rect2( 128, 192, 64, 64 )
+
 [sub_resource type="SpriteFrames" id=12]
 animations = [ {
 "frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ) ],
 "loop": true,
 "name": "idle",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 17 ), SubResource( 18 ), SubResource( 19 ) ],
+"loop": true,
+"name": "guard",
 "speed": 5.0
 } ]
 
@@ -110,10 +131,6 @@ turn_icon = ExtResource( 11 )
 [node name="skin" parent="a-kun/fighter" index="0"]
 frames = SubResource( 4 )
 animation = "idle"
-script = ExtResource( 15 )
-
-[node name="attack" parent="a-kun/fighter/actions" index="0"]
-target = 1
 
 [node name="ai" parent="a-kun/fighter" index="5"]
 script = ExtResource( 17 )

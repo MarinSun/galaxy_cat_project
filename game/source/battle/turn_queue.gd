@@ -14,11 +14,12 @@ func initialize() -> void:
 	active_fighter = get_child(0)
 	emit_signal("queue_changed", get_fighters(), active_fighter)
 	
-func play_turn(action, targets: Array):
+func play_turn(action: BattleAction, targets: Array):
 	if not last_action_canceled:
 		pass
 	action.initialize(active_fighter)
 	var hit_target = yield(action.execute(targets), "completed")
+	print(hit_target)
 	if not hit_target:
 		last_action_canceled = true
 		return

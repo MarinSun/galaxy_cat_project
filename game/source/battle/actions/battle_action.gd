@@ -2,7 +2,6 @@ extends Node
 class_name BattleAction
 
 var initialized = false
-
 onready var actor: Fighter = get_parent().get_owner()
 
 export (Texture) var icon = load("res://assets/combat/action_frame.png")

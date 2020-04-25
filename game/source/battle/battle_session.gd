@@ -25,7 +25,6 @@ func initialize(group: EnemyGroup, party: Array) -> void:
 	turn_queue.initialize()
 	
 	battle_start()
-#	turn_queue.print_queue()
 
 func combat_preparation(group: EnemyGroup, party_members: Array) -> void:
 	for member in group.get_children():
