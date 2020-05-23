@@ -1,0 +1,95 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "AI",
+"language": "GDScript",
+"path": "res://source/fighter/ai/ai_template.gd"
+}, {
+"base": "Node",
+"class": "Action",
+"language": "GDScript",
+"path": "res://source/battle/actions/action.gd"
+}, {
+"base": "Spatial",
+"class": "BattleSession",
+"language": "GDScript",
+"path": "res://source/battle/battle_session.gd"
+}, {
+"base": "Control",
+"class": "CharacterInfo",
+"language": "GDScript",
+"path": "res://source/battle/ui/status/character_info.gd"
+}, {
+"base": "Resource",
+"class": "CharacterStatus",
+"language": "GDScript",
+"path": "res://source/fighter/status.gd"
+}, {
+"base": "Node",
+"class": "EnemyGroup",
+"language": "GDScript",
+"path": "res://source/fighter/enemy_group.gd"
+}, {
+"base": "Position3D",
+"class": "Fighter",
+"language": "GDScript",
+"path": "res://source/fighter/fighter.gd"
+}, {
+"base": "Node",
+"class": "Party",
+"language": "GDScript",
+"path": "res://source/party/party.gd"
+}, {
+"base": "Node",
+"class": "PartyMember",
+"language": "GDScript",
+"path": "res://source/party/party_member.gd"
+}, {
+"base": "Resource",
+"class": "StatusGrowth",
+"language": "GDScript",
+"path": "res://source/fighter/status_growth.gd"
+}, {
+"base": "Control",
+"class": "StatusTemplate",
+"language": "GDScript",
+"path": "res://source/battle/ui/status/status_template.gd"
+}, {
+"base": "YSort",
+"class": "TurnQueue",
+"language": "GDScript",
+"path": "res://source/battle/turn_queue.gd"
+} ]
+_global_script_class_icons={
+"AI": "",
+"Action": "",
+"BattleSession": "",
+"CharacterInfo": "",
+"CharacterStatus": "",
+"EnemyGroup": "",
+"Fighter": "",
+"Party": "",
+"PartyMember": "",
+"StatusGrowth": "",
+"StatusTemplate": "",
+"TurnQueue": ""
+}
+
+[application]
+
+config/name="Sol Terra (WIP)"
+run/main_scene="res://session/sandbox_combat_session.tscn"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

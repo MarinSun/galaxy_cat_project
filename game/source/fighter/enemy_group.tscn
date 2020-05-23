@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://source/fighter/enemy_group.gd" type="Script" id=1]
+
+[node name="enemy_group" type="Node"]
+script = ExtResource( 1 )

@@ -1,0 +1,43 @@
+[gd_resource type="Resource" load_steps=8 format=2]
+
+[ext_resource path="res://source/fighter/status_growth.gd" type="Script" id=1]
+
+[sub_resource type="Curve" id=1]
+min_value = 11.0
+max_value = 999.0
+_data = [ Vector2( 0, 11 ), 0.0, 0.0, 0, 0, Vector2( 1, 636.091 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Curve" id=2]
+min_value = 8.0
+max_value = 999.0
+_data = [ Vector2( 0, 8 ), 0.0, 556.926, 0, 0, Vector2( 0.691729, 236.891 ), 123.762, 123.762, 0, 0, Vector2( 1, 382.055 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Curve" id=3]
+min_value = 10.0
+max_value = 999.0
+_data = [ Vector2( 0, 10 ), 0.0, 926.008, 0, 0, Vector2( 1, 999 ), -185.557, 0.0, 0, 0 ]
+
+[sub_resource type="Curve" id=4]
+min_value = 1.0
+max_value = 5.0
+_data = [ Vector2( 0, 1 ), 0.0, 4.0, 0, 1, Vector2( 1, 5 ), 4.0, 0.0, 1, 0 ]
+
+[sub_resource type="Curve" id=5]
+min_value = 12.0
+max_value = 999.0
+_data = [ Vector2( 0, 12 ), 0.0, 724.004, 0, 0, Vector2( 0.533835, 309.473 ), 0.0, 0.0, 0, 0, Vector2( 1, 645.164 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Curve" id=6]
+min_value = 10.0
+max_value = 999.0
+_data = [ Vector2( 0, 1 ), 0.0, 412.035, 0, 0, Vector2( 0.56015, 354.836 ), 804.449, 804.449, 0, 0, Vector2( 0.996241, 554.436 ), 0.0, 0.0, 0, 0 ]
+
+[resource]
+script = ExtResource( 1 )
+level_lookup = PoolIntArray( 0, 100, 220, 450, 800, 1200, 1800, 2500, 3250, 5000 )
+max_health_curve = SubResource( 3 )
+max_stamina_curve = SubResource( 4 )
+strength_curve = SubResource( 5 )
+intelligence_curve = SubResource( 2 )
+vitality_curve = SubResource( 6 )
+agility_curve = SubResource( 1 )

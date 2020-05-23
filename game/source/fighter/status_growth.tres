@@ -1,0 +1,7 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://source/fighter/status_growth.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+level_lookup = PoolIntArray( 0, 100, 220, 450, 800, 1200, 1800, 2500, 3250, 5000 )

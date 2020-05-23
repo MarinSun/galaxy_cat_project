@@ -1,0 +1,216 @@
+[gd_scene load_steps=40 format=2]
+
+[ext_resource path="res://source/fighter/fighter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/fighters/enemies/spider.png" type="Texture" id=2]
+[ext_resource path="res://source/fighter/enemy/black_spider/black_spider.tres" type="Resource" id=3]
+[ext_resource path="res://source/fighter/ai/weak_ai.gd" type="Script" id=4]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 224, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 256, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 288, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 320, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 352, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 384, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 32, 64, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 64, 64, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 96, 64, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 128, 64, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 160, 64, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 192, 64, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 224, 64, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 192, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 224, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 256, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 288, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 320, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 352, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 384, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 0, 64, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 0, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=30]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 32, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=31]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 64, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=32]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 96, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=33]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 128, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=34]
+flags = 19
+atlas = ExtResource( 2 )
+region = Rect2( 160, 32, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=35]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
+"loop": true,
+"name": "idle",
+"speed": 12.0
+}, {
+"frames": [ SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ) ],
+"loop": false,
+"name": "dead",
+"speed": 12.0
+}, {
+"frames": [ SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
+"loop": false,
+"name": "attack",
+"speed": 12.0
+}, {
+"frames": [ SubResource( 26 ), SubResource( 27 ), SubResource( 28 ) ],
+"loop": false,
+"name": "stagger",
+"speed": 12.0
+}, {
+"frames": [ SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ) ],
+"loop": false,
+"name": "move",
+"speed": 12.0
+} ]
+
+[node name="black_spider" instance=ExtResource( 1 )]
+stats = ExtResource( 3 )
+
+[node name="skin" parent="." index="0"]
+frames = SubResource( 35 )
+animation = "idle"
+frame = 3
+playing = true
+
+[node name="ai" parent="." index="5"]
+script = ExtResource( 4 )
