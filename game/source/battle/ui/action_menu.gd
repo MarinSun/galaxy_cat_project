@@ -21,7 +21,7 @@ func open() -> void:
 	action_list.get_child(0).grab_focus()
 
 func close() -> void:
-	tween.interpolate_property(self, "visible", false, true, 0.5)
+	tween.interpolate_property(self, "visible", false, true, 1.0)
 	tween.start()
 	yield(tween, "tween_completed")
 	queue_free()

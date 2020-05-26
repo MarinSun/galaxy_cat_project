@@ -12,9 +12,9 @@ __meta__ = {
 
 [node name="list" type="VBoxContainer" parent="."]
 anchor_right = 0.191406
-anchor_bottom = 1.0
-margin_right = -1.52588e-05
-rect_min_size = Vector2( 192, 600 )
+anchor_bottom = 0.533333
+margin_bottom = -3.05176e-05
+rect_min_size = Vector2( 192, 252 )
 custom_constants/separation = 16
 __meta__ = {
 "_edit_use_anchors_": true

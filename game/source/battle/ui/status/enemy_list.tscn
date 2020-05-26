@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://source/battle/ui/status/enemy_list.gd" type="Script" id=1]
+
+[node name="enemy_list" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background" type="Panel" parent="."]
+modulate = Color( 1, 1, 1, 0.643137 )
+anchor_top = 0.533333
+anchor_right = 0.191406
+anchor_bottom = 1.0
+rect_min_size = Vector2( 196, 280 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="list" type="VBoxContainer" parent="."]
+anchor_top = 0.533333
+anchor_right = 0.191406
+anchor_bottom = 1.0
+margin_top = -3.05176e-05
+rect_min_size = Vector2( 196, 280 )
+custom_constants/separation = 24
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}

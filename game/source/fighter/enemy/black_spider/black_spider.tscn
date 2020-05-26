@@ -212,5 +212,8 @@ animation = "idle"
 frame = 3
 playing = true
 
-[node name="ai" parent="." index="5"]
+[node name="cursor_position" parent="." index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37957, 0 )
+
+[node name="ai" parent="." index="6"]
 script = ExtResource( 4 )

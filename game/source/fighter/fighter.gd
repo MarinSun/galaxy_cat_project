@@ -13,6 +13,7 @@ onready var drops = $drops
 onready var ai = $ai
 
 onready var target_global_position: Vector3 = $anchor.global_transform.origin
+onready var cursor_position: Vector3 = $cursor_position.global_transform.origin
 
 var selected: bool = false setget set_selected
 var selectable: bool = false setget set_selectable
@@ -24,7 +25,7 @@ func _ready():
 	selectable = true
 
 func initialize():
-	skin.play()
+	skin.anim.play()
 	actions.initialize(skills.get_children())
 	stats = stats.copy()
 	stats.connect("health_depleted", self, "_on_health_depleted")

@@ -5,8 +5,8 @@
 
 [node name="enemy_group" instance=ExtResource( 2 )]
 
-[node name="black_spider" parent="." index="0" instance=ExtResource( 1 )]
+[node name="Black Spider A" parent="." index="0" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.993635, 0.209292, -0.27701 )
 
-[node name="black_spider2" parent="." index="1" instance=ExtResource( 1 )]
+[node name="Black Spider B" parent="." index="1" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.993635, 0.209292, 0.355561 )

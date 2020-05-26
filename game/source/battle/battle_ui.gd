@@ -6,10 +6,12 @@ signal targets_selected(targets)
 const action_menu = preload("res://source/battle/ui/action_menu.tscn")
 
 onready var status = $party_status
+onready var enemy_list = $enemy_list
 onready var cursor = $cursor
 
 func initialize(session: BattleSession, queue: TurnQueue, fighters: Array):
 	status.initialize(fighters)
+	enemy_list.initialize(fighters)
 	remove_child(cursor)
 
 func open_actions_menu(fighter: Fighter) -> void:
@@ -23,5 +25,5 @@ func open_actions_menu(fighter: Fighter) -> void:
 func select_targets(selectable_fighters: Array) -> void:
 	add_child(cursor)
 	var targets: Array = yield(cursor.select_targets(selectable_fighters), "completed")
-	emit_signal("target_selected", targets)
+	emit_signal("targets_selected", targets)
 	remove_child(cursor)
