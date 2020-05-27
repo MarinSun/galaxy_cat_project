@@ -21,12 +21,15 @@ script = ExtResource( 2 )
 
 [node name="cursor_position" type="Position3D" parent="."]
 
+[node name="attacker_position" type="Position3D" parent="."]
+
 [node name="actions" type="Node" parent="."]
 script = ExtResource( 6 )
 
 [node name="attack" parent="actions" instance=ExtResource( 4 )]
 script = ExtResource( 3 )
 icon = ExtResource( 5 )
+description = "Hits an enemy."
 
 [node name="skills" type="Node" parent="."]
 

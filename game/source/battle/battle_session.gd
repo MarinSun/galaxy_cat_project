@@ -22,7 +22,7 @@ func initialize(group: EnemyGroup, party: Array):
 	for fighter in fighters:
 		fighter.initialize()
 	
-	battle_ui.initialize(self, turn_queue, fighters)
+	battle_ui.initialize(self, turn_queue, fighters, group)
 	turn_queue.initialize()
 	
 	battle_start()
@@ -62,15 +62,20 @@ func play_turn() -> void:
 		turn_queue.skip_turn()
 		fighter = get_active_fighter()
 	
+	fighter.stats.play_turn()
 	fighter.selected = true
 	fighter.skin.idle()
+	
+	# Define enemies on the field
 	var enemies: Array = get_targets()
 	if not enemies:
 		battle_end()
 		return
 	
-	action = yield(fighter.ai.choose_action(fighter, enemies), "completed")
-	targets = yield(fighter.ai.choose_target(fighter, action, enemies), "completed")
+	var selectables: Array = turn_queue.get_fighters()
+	
+	action = yield(fighter.ai.choose_action(fighter, selectables), "completed")
+	targets = yield(fighter.ai.choose_target(fighter, action, selectables), "completed")
 	fighter.selected = false
 	
 	if targets != []:

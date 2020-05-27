@@ -29,8 +29,24 @@ func copy() -> CharacterStatus:
 	copy.stamina = stamina
 	return copy
 
-func take_damage():
-	pass
+func take_damage(hit: Hit):
+	var old_health = health
+	health -= hit.damage
+	health = max(0, health)
+	emit_signal("health_changed", health, old_health)
+	if health == 0:
+		emit_signal("health_depleted")
+
+func act(cost: int):
+	var old_stamina = stamina
+	stamina -= cost
+	health = max(0, stamina)
+	emit_signal("stamina_changed", stamina, old_stamina)
+
+func play_turn():
+	var old_stamina = stamina
+	stamina = max_stamina
+	emit_signal("stamina_changed", stamina, old_stamina)
 
 func _get_level() -> int:
 	return level

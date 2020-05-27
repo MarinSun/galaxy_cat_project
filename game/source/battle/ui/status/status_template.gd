@@ -18,7 +18,7 @@ func initialize(fighter: Fighter) -> void:
 func set_hp_value(new_value: int) -> void:
 	hp_value = new_value
 	hp_bar.value = new_value
-	hp_text.display(hp_value, new_value)
+	hp_text.display(hp_value, hp_max)
 
 func set_hp_max(new_value: int) -> void:
 	hp_max = new_value
@@ -28,7 +28,7 @@ func set_hp_max(new_value: int) -> void:
 func set_sp_value(new_value: int) -> void:
 	sp_value = new_value
 	sp_bar.value = new_value
-	sp_text.display(sp_value, new_value)
+	sp_text.display(sp_value, sp_max)
 
 func set_sp_max(new_value: int) -> void:
 	sp_max = new_value

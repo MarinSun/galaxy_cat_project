@@ -8,10 +8,12 @@ const action_menu = preload("res://source/battle/ui/action_menu.tscn")
 onready var status = $party_status
 onready var enemy_list = $enemy_list
 onready var cursor = $cursor
+onready var popup = $popup
 
-func initialize(session: BattleSession, queue: TurnQueue, fighters: Array):
+func initialize(session: BattleSession, queue: TurnQueue, fighters: Array, group: EnemyGroup):
 	status.initialize(fighters)
 	enemy_list.initialize(fighters)
+	popup.initialize(fighters, group)
 	remove_child(cursor)
 
 func open_actions_menu(fighter: Fighter) -> void:

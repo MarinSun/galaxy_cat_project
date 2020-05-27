@@ -12,8 +12,9 @@ onready var skills = $skills
 onready var drops = $drops
 onready var ai = $ai
 
-onready var target_global_position: Vector3 = $anchor.global_transform.origin
-onready var cursor_position: Vector3 = $cursor_position.global_transform.origin
+onready var starting_position: Vector3 = $anchor.global_transform
+onready var cursor_position: Vector3 = $cursor_position.global_transform
+onready var attacker_position: Vector3 = $attacker_position.global_transform
 
 var selected: bool = false setget set_selected
 var selectable: bool = false setget set_selectable
@@ -25,7 +26,7 @@ func _ready():
 	selectable = true
 
 func initialize():
-	skin.anim.play()
+	skin.anim.play("idle")
 	actions.initialize(skills.get_children())
 	stats = stats.copy()
 	stats.connect("health_depleted", self, "_on_health_depleted")
@@ -42,7 +43,14 @@ func set_selectable(value):
 		set_selected(false)
 
 func take_damage(hit):
-	pass
+	stats.take_damage(hit)
+	if stats.health > 0:
+		skin.stagger()
+		yield(skin.anim, "animation_finished")
+		skin.recovery()
+
+func act(cost):
+	stats.act(cost)
 
 func _on_health_depleted():
 	selectable = false
