@@ -55,6 +55,9 @@ func dead():
 	anim.play("dead")
 	yield(anim, "animation_finished")
 
+func get_animation():
+	return anim.current_animation
+
 func move_to(target: Fighter):
 	anim.play("move")
 	tween.interpolate_property(

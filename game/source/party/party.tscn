@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=2]
+[gd_scene load_steps=84 format=2]
 
 [ext_resource path="res://source/party/party_member.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/fighters/party/fighter_evan.png" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://assets/battle_ui/icons/core_flee.png" type="Texture" id=10]
 [ext_resource path="res://assets/fighters/party/fighter_gallius.png" type="Texture" id=11]
 [ext_resource path="res://source/fighter/party/gallius.tres" type="Resource" id=12]
+[ext_resource path="res://source/exploration/sprite_body_evan.tscn" type="PackedScene" id=13]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 16
@@ -26,102 +27,102 @@ region = Rect2( 40, 120, 40, 40 )
 [sub_resource type="AtlasTexture" id=3]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 80, 0, 40, 40 )
+region = Rect2( 0, 240, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=4]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 120, 0, 40, 40 )
+region = Rect2( 40, 240, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=5]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 0, 40, 40, 40 )
+region = Rect2( 80, 240, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=6]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 40, 40, 40, 40 )
+region = Rect2( 120, 240, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=7]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 80, 40, 40, 40 )
+region = Rect2( 0, 280, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=8]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 120, 40, 40, 40 )
+region = Rect2( 40, 280, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=9]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 0, 80, 40, 40 )
+region = Rect2( 80, 280, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=10]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 40, 80, 40, 40 )
+region = Rect2( 120, 280, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=11]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 80, 80, 40, 40 )
+region = Rect2( 0, 320, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=12]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 120, 80, 40, 40 )
+region = Rect2( 40, 320, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=13]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 0, 240, 40, 40 )
+region = Rect2( 80, 0, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=14]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 40, 240, 40, 40 )
+region = Rect2( 120, 0, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=15]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 80, 240, 40, 40 )
+region = Rect2( 0, 40, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=16]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 120, 240, 40, 40 )
+region = Rect2( 40, 40, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=17]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 0, 280, 40, 40 )
+region = Rect2( 80, 40, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=18]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 40, 280, 40, 40 )
+region = Rect2( 120, 40, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=19]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 80, 280, 40, 40 )
+region = Rect2( 0, 80, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=20]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 120, 280, 40, 40 )
+region = Rect2( 40, 80, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=21]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 0, 320, 40, 40 )
+region = Rect2( 80, 80, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=22]
 flags = 16
 atlas = ExtResource( 2 )
-region = Rect2( 40, 320, 40, 40 )
+region = Rect2( 120, 80, 40, 40 )
 
 [sub_resource type="AtlasTexture" id=23]
 flags = 16
@@ -172,13 +173,13 @@ animations = [ {
 }, {
 "frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
 "loop": false,
-"name": "dead",
-"speed": 12.0
+"name": "attack",
+"speed": 16.0
 }, {
 "frames": [ SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ) ],
 "loop": false,
-"name": "attack",
-"speed": 16.0
+"name": "dead",
+"speed": 12.0
 }, {
 "frames": [ SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ) ],
 "loop": true,
@@ -377,77 +378,77 @@ region = Rect2( 60, 60, 60, 60 )
 [sub_resource type="AtlasTexture" id=41]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 0, 300, 60, 60 )
+region = Rect2( 0, 180, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=42]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 60, 300, 60, 60 )
+region = Rect2( 60, 180, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=43]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 120, 300, 60, 60 )
+region = Rect2( 120, 180, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=44]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 180, 300, 60, 60 )
+region = Rect2( 180, 180, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=45]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 240, 300, 60, 60 )
+region = Rect2( 240, 180, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=46]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 300, 300, 60, 60 )
+region = Rect2( 300, 180, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=47]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 360, 300, 60, 60 )
+region = Rect2( 360, 180, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=48]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 420, 300, 60, 60 )
+region = Rect2( 0, 300, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=49]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 0, 180, 60, 60 )
+region = Rect2( 60, 300, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=50]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 60, 180, 60, 60 )
+region = Rect2( 120, 300, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=51]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 120, 180, 60, 60 )
+region = Rect2( 180, 300, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=52]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 180, 180, 60, 60 )
+region = Rect2( 240, 300, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=53]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 240, 180, 60, 60 )
+region = Rect2( 300, 300, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=54]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 300, 180, 60, 60 )
+region = Rect2( 360, 300, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=55]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 360, 180, 60, 60 )
+region = Rect2( 420, 300, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=56]
 flags = 19
@@ -457,27 +458,27 @@ region = Rect2( 60, 0, 60, 60 )
 [sub_resource type="AtlasTexture" id=57]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 0, 120, 60, 60 )
+region = Rect2( 0, 0, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=58]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 0, 0, 60, 60 )
+region = Rect2( 0, 240, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=59]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 0, 240, 60, 60 )
+region = Rect2( 60, 240, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=60]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 60, 240, 60, 60 )
+region = Rect2( 120, 240, 60, 60 )
 
 [sub_resource type="AtlasTexture" id=61]
 flags = 19
 atlas = ExtResource( 11 )
-region = Rect2( 120, 240, 60, 60 )
+region = Rect2( 0, 120, 60, 60 )
 
 [sub_resource type="SpriteFrames" id=62]
 animations = [ {
@@ -486,14 +487,14 @@ animations = [ {
 "name": "idle",
 "speed": 4.0
 }, {
-"frames": [ SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ), SubResource( 48 ) ],
-"loop": false,
-"name": "dead",
-"speed": 12.0
-}, {
-"frames": [ SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ) ],
+"frames": [ SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ) ],
 "loop": false,
 "name": "attack",
+"speed": 12.0
+}, {
+"frames": [ SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ) ],
+"loop": false,
+"name": "dead",
 "speed": 12.0
 }, {
 "frames": [ SubResource( 56 ) ],
@@ -503,18 +504,18 @@ animations = [ {
 }, {
 "frames": [ SubResource( 57 ) ],
 "loop": false,
-"name": "move",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 58 ) ],
-"loop": false,
 "name": "guard_stagger",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 59 ), SubResource( 60 ), SubResource( 61 ) ],
+"frames": [ SubResource( 58 ), SubResource( 59 ), SubResource( 60 ) ],
 "loop": false,
 "name": "idle_stagger",
 "speed": 6.0
+}, {
+"frames": [ SubResource( 61 ) ],
+"loop": false,
+"name": "move",
+"speed": 5.0
 } ]
 
 [sub_resource type="Animation" id=63]
@@ -678,7 +679,6 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id=68]
-resource_name = "move"
 length = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:animation")
@@ -787,6 +787,7 @@ tracks/2/keys = {
 script = ExtResource( 3 )
 
 [node name="Evan Stormcloud" parent="." instance=ExtResource( 1 )]
+explorer_sprite = NodePath("exploration_sprite")
 growth = ExtResource( 4 )
 
 [node name="skin" parent="Evan Stormcloud/fighter" index="0"]
@@ -812,8 +813,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.187213, 0 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.610888, 0 )
 
 [node name="attacker_position" parent="Evan Stormcloud/fighter" index="3"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.394975, 0.187213, 0 )
-visible = false
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.325209, 0.187213, 0 )
 
 [node name="guard" parent="Evan Stormcloud/fighter/actions" index="1" instance=ExtResource( 7 )]
 script = ExtResource( 6 )
@@ -829,17 +829,17 @@ target = 3
 [node name="ai" parent="Evan Stormcloud/fighter" index="7"]
 script = ExtResource( 5 )
 
+[node name="exploration_sprite" parent="Evan Stormcloud" instance=ExtResource( 13 )]
+
 [node name="Gallius" parent="." instance=ExtResource( 1 )]
 growth = ExtResource( 12 )
 experience = 3000
 
 [node name="skin" parent="Gallius/fighter" index="0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.298576, 0 )
-modulate = Color( 1, 1, 1, 0 )
 frames = SubResource( 62 )
-animation = "attack"
-frame = 6
-playing = true
+animation = "idle"
+frame = 1
 
 [node name="anim" parent="Gallius/fighter/skin" index="1"]
 anims/attack = SubResource( 63 )
@@ -858,7 +858,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.298576, 0 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.598264, 0 )
 
 [node name="attacker_position" parent="Gallius/fighter" index="3"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.376313, 0.25371, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343751, 0.25371, 0 )
 
 [node name="guard" parent="Gallius/fighter/actions" index="1" instance=ExtResource( 7 )]
 script = ExtResource( 6 )

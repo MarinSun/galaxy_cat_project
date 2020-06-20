@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://source/battle/ui/turn_order/fighter_icon.gd" type="Script" id=1]
+
+[node name="fighter_icon" type="Control"]
+anchor_right = 0.0234375
+anchor_bottom = 0.04
+margin_right = -1.90735e-06
+margin_bottom = -1.90735e-06
+rect_min_size = Vector2( 24, 24 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="icon" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -47.4375
+margin_bottom = -47.04
+rect_min_size = Vector2( 24, 24 )
+__meta__ = {
+"_edit_use_anchors_": true
+}

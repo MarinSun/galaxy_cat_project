@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://source/battle/ui/popup/popup_window.gd" type="Script" id=1]
+
+[node name="popup_window" type="CenterContainer"]
+anchor_left = 0.195313
+anchor_top = 0.00666667
+anchor_right = 0.808594
+anchor_bottom = 0.166667
+margin_bottom = -7.62939e-06
+rect_min_size = Vector2( 628, 96 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="panel" type="Panel" parent="."]
+margin_left = 314.0
+margin_top = 48.0
+margin_right = 314.0
+margin_bottom = 48.0
+
+[node name="label" type="Label" parent="."]
+margin_left = 314.0
+margin_top = 41.0
+margin_right = 314.0
+margin_bottom = 55.0

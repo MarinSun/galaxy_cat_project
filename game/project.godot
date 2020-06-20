@@ -44,10 +44,30 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://source/fighter/fighter.gd"
 }, {
+"base": "Control",
+"class": "FighterIcon",
+"language": "GDScript",
+"path": "res://source/battle/ui/turn_order/fighter_icon.gd"
+}, {
 "base": "Reference",
 "class": "Hit",
 "language": "GDScript",
 "path": "res://source/battle/hit.gd"
+}, {
+"base": "Spatial",
+"class": "InteractiveObjects",
+"language": "GDScript",
+"path": "res://source/map/interactive_objects.gd"
+}, {
+"base": "Node",
+"class": "Map",
+"language": "GDScript",
+"path": "res://source/map/map.gd"
+}, {
+"base": "KinematicBody",
+"class": "MapSprite",
+"language": "GDScript",
+"path": "res://source/exploration/sprite.gd"
 }, {
 "base": "Node",
 "class": "Party",
@@ -58,6 +78,26 @@ _global_script_classes=[ {
 "class": "PartyMember",
 "language": "GDScript",
 "path": "res://source/party/party_member.gd"
+}, {
+"base": "MapSprite",
+"class": "SpriteActor",
+"language": "GDScript",
+"path": "res://source/exploration/sprite_actor.gd"
+}, {
+"base": "Position3D",
+"class": "SpriteBody",
+"language": "GDScript",
+"path": "res://source/exploration/sprite_body.gd"
+}, {
+"base": "SpriteActor",
+"class": "SpriteExplorer",
+"language": "GDScript",
+"path": "res://source/exploration/sprite_explorer.gd"
+}, {
+"base": "SpriteActor",
+"class": "SpriteInteractive",
+"language": "GDScript",
+"path": "res://source/exploration/sprite_interactive.gd"
 }, {
 "base": "Resource",
 "class": "StatusGrowth",
@@ -82,9 +122,17 @@ _global_script_class_icons={
 "CharacterStatus": "",
 "EnemyGroup": "",
 "Fighter": "",
+"FighterIcon": "",
 "Hit": "",
+"InteractiveObjects": "",
+"Map": "",
+"MapSprite": "",
 "Party": "",
 "PartyMember": "",
+"SpriteActor": "",
+"SpriteBody": "",
+"SpriteExplorer": "",
+"SpriteInteractive": "",
 "StatusGrowth": "",
 "StatusTemplate": "",
 "TurnQueue": ""
@@ -93,7 +141,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Sol Terra (WIP)"
-run/main_scene="res://session/sandbox_combat_session.tscn"
+run/main_scene="res://session/sandbox_session.tscn"
 config/icon="res://icon.png"
 
 [rendering]

@@ -1,11 +1,10 @@
 extends Control
 
-onready var popup_window = $popup_window
-onready var animation_player = $animation_player
+const popup_window = preload("res://source/battle/ui/popup/popup_window.tscn")
 
 func initialize(fighters: Array, group: EnemyGroup) -> void:
-	pass
+	display_encounter(group)
 
-func display_popup():
-	animation_player.play("display")
-	yield(animation_player, "animation_finished")
+func display_encounter(group):
+	var popup = popup_window.instance()
+	popup.encounter_message(group)

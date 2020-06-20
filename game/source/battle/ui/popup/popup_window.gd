@@ -1,3 +1,6 @@
 extends CenterContainer
 
-onready var label: Label = $label
+onready var label = $popup_window/label
+
+func encounter_message(group: EnemyGroup):
+	pass

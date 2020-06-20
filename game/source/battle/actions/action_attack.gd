@@ -13,6 +13,8 @@ func execute(targets):
 #		yield(actor.skin.move_finished(), "completed")
 		
 		yield(actor.skin.attack(), "completed")
+		
+		# var target_def = target.stats.vitality if target.skin.get_animation() == "guard" else 0
 		var hit = Hit.new(actor.stats.strength, target.stats.vitality)
 		target.take_damage(hit)
 		yield(actor.get_tree().create_timer(0.5), "timeout")
