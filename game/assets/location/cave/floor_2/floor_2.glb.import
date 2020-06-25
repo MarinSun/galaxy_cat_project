@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/Cave_Start.glb-0922669121b9a4b476a8d7679a2cc643.scn"
+path="res://.import/floor_2.glb-6f1092ebcefa040725d363847fa2c877.scn"
 
 [deps]
 
-source_file="res://assets/location/cave/Cave_Start.glb"
-dest_files=[ "res://.import/Cave_Start.glb-0922669121b9a4b476a8d7679a2cc643.scn" ]
+source_file="res://assets/location/cave/floor_2/floor_2.glb"
+dest_files=[ "res://.import/floor_2.glb-6f1092ebcefa040725d363847fa2c877.scn" ]
 
 [params]
 

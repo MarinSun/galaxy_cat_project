@@ -59,7 +59,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://source/map/interactive_objects.gd"
 }, {
-"base": "Node",
+"base": "Navigation",
 "class": "Map",
 "language": "GDScript",
 "path": "res://source/map/map.gd"

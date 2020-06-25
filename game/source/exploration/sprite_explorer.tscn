@@ -11,4 +11,4 @@ script = ExtResource( 1 )
 [node name="sprite_body" parent="pivot" instance=ExtResource( 2 )]
 
 [node name="camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.932972, 0.359948, 0, -0.359948, 0.932972, 0, 1.55989, 1.92152 )
+transform = Transform( 1, 0, 0, 0, 0.881394, 0.472382, 0, -0.472382, 0.881394, 0, 2.39071, 4.85243 )

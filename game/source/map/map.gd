@@ -1,4 +1,4 @@
-extends Node
+extends Navigation
 class_name Map
 
 signal enemies_encountered(group)
