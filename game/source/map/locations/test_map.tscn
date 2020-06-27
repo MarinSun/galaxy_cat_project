@@ -28,7 +28,7 @@ transform = Transform( -0.49979, 0, 0.0144754, 0, 0.5, 0, -0.0144754, 0, -0.4997
 script = ExtResource( 2 )
 
 [node name="spawn_point" type="Position3D" parent="interactive_objects"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.41893, 1.36645, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.41893, 1.23381, 0 )
 
 [node name="objects" type="Spatial" parent="interactive_objects"]
 script = ExtResource( 3 )

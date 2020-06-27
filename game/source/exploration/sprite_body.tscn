@@ -4,6 +4,9 @@
 
 [node name="sprite_body" type="Position3D"]
 script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": ""
+}
 
 [node name="animation_player" type="AnimationPlayer" parent="."]
 

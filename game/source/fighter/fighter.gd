@@ -12,9 +12,9 @@ onready var skills = $skills
 onready var drops = $drops
 onready var ai = $ai
 
-onready var starting_position: Vector3 = $anchor.global_transform
-onready var cursor_position: Vector3 = $cursor_position.global_transform
-onready var attacker_position: Vector3 = $attacker_position.global_transform
+onready var starting_position: Transform = $anchor.global_transform
+onready var cursor_position: Transform = $cursor_position.global_transform
+onready var attacker_position: Transform = $attacker_position.global_transform
 
 var selected: bool = false setget set_selected
 var selectable: bool = false setget set_selectable
