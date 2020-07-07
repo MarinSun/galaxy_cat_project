@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Floor_1_uv texture.png-bec89ad86439f45b40cd92c7b03a0bad.s3tc.stex"
-path.etc2="res://.import/Floor_1_uv texture.png-bec89ad86439f45b40cd92c7b03a0bad.etc2.stex"
+path.s3tc="res://.import/Floor_2uvgrass.png-2d9854582cd58b8d4d06ee7dc51054be.s3tc.stex"
+path.etc2="res://.import/Floor_2uvgrass.png-2d9854582cd58b8d4d06ee7dc51054be.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/location/cave/floor_1/Floor_1_uv texture.png"
-dest_files=[ "res://.import/Floor_1_uv texture.png-bec89ad86439f45b40cd92c7b03a0bad.s3tc.stex", "res://.import/Floor_1_uv texture.png-bec89ad86439f45b40cd92c7b03a0bad.etc2.stex" ]
+source_file="res://assets/location/cave/floor_2/Floor_2uvgrass.png"
+dest_files=[ "res://.import/Floor_2uvgrass.png-2d9854582cd58b8d4d06ee7dc51054be.s3tc.stex", "res://.import/Floor_2uvgrass.png-2d9854582cd58b8d4d06ee7dc51054be.etc2.stex" ]
 
 [params]
 

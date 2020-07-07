@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://assets/location/cave/floor_2/Material.material" type="Material" id=1]
+[ext_resource path="res://assets/location/cave/floor_2/Material2.material" type="Material" id=1]
 [ext_resource path="res://assets/location/cave/floor_2/floor_2.glb" type="PackedScene" id=2]
 
 [node name="floor_2" instance=ExtResource( 2 )]
 
-[node name="floor_2" parent="." index="0"]
+[node name="Floor_2" parent="." index="0"]
 material/0 = ExtResource( 1 )
