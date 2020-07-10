@@ -6,7 +6,9 @@
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 0.25, 0.25, 0.25 )
 
-[node name="sprite_explorer" type="KinematicBody"]
+[node name="sprite_explorer" type="KinematicBody" groups=[
+"player",
+]]
 script = ExtResource( 1 )
 
 [node name="pivot" type="Position3D" parent="."]
