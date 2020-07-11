@@ -16,7 +16,7 @@ script = ExtResource( 1 )
 [node name="sprite_body" parent="pivot" instance=ExtResource( 2 )]
 
 [node name="camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.881394, 0.472382, 0, -0.472382, 0.881394, 0, 3.43186, 5.9687 )
+transform = Transform( 1, 0, 0, 0, 0.881394, 0.472382, 0, -0.472382, 0.881394, 0, 3.432, 5.969 )
 near = 0.5
 
 [node name="hitbox" type="CollisionShape" parent="."]
