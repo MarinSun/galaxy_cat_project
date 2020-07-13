@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://source/map/map.gd" type="Script" id=1]
+[ext_resource path="res://source/map/interactive_objects.gd" type="Script" id=2]
 
 [node name="map" type="Navigation"]
 script = ExtResource( 1 )
@@ -8,5 +9,8 @@ script = ExtResource( 1 )
 [node name="stage" type="NavigationMeshInstance" parent="."]
 
 [node name="interactive_objects" type="Spatial" parent="."]
+script = ExtResource( 2 )
+
+[node name="world_environment" type="WorldEnvironment" parent="."]
 
 [node name="interface" type="CanvasLayer" parent="."]
