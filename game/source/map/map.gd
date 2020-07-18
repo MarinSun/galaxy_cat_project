@@ -8,7 +8,8 @@ signal dialogue_finished
 onready var interactives = $interactive_objects
 
 func _ready() -> void:
-	pass
+	for action in get_tree().get_nodes_in_group("map_action"):
+		(action as MapAction).initialize(self)
 
 func spawn_party(party) -> void:
 	interactives.objects.spawn_party(interactives, party)

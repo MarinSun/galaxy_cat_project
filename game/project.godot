@@ -64,6 +64,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://source/map/map.gd"
 }, {
+"base": "Node",
+"class": "MapAction",
+"language": "GDScript",
+"path": "res://source/map/actions/map_action.gd"
+}, {
+"base": "MapAction",
+"class": "MapActionBattle",
+"language": "GDScript",
+"path": "res://source/map/actions/start_battle.gd"
+}, {
 "base": "KinematicBody",
 "class": "MapSprite",
 "language": "GDScript",
@@ -126,6 +136,8 @@ _global_script_class_icons={
 "Hit": "",
 "InteractiveObjects": "",
 "Map": "",
+"MapAction": "",
+"MapActionBattle": "",
 "MapSprite": "",
 "Party": "",
 "PartyMember": "",

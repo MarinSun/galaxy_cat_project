@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://source/battle/stage/stage_test.tscn" type="PackedScene" id=1]
+[ext_resource path="res://source/battle/stage/stage_cave.tscn" type="PackedScene" id=1]
 [ext_resource path="res://source/battle/battle_session.gd" type="Script" id=2]
 [ext_resource path="res://source/battle/turn_queue.tscn" type="PackedScene" id=3]
 [ext_resource path="res://source/battle/battle_ui.gd" type="Script" id=4]
@@ -9,6 +9,7 @@
 [ext_resource path="res://source/battle/ui/status/enemy_list.tscn" type="PackedScene" id=7]
 [ext_resource path="res://source/battle/ui/popup/popup.tscn" type="PackedScene" id=8]
 [ext_resource path="res://source/battle/ui/turn_order/turn_order.tscn" type="PackedScene" id=9]
+
 
 [node name="battle_session" type="Spatial"]
 script = ExtResource( 2 )
