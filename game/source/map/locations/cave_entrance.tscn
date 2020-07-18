@@ -13,21 +13,17 @@ vertices = PoolVector3Array( 11.0897, -2.40946, -15.9443, 7.48968, -2.40946, -16
 polygons = [ PoolIntArray( 4, 3, 0 ), PoolIntArray( 0, 3, 2 ), PoolIntArray( 0, 2, 1 ), PoolIntArray( 6, 5, 7 ), PoolIntArray( 7, 5, 8 ), PoolIntArray( 8, 5, 9 ), PoolIntArray( 12, 11, 10 ), PoolIntArray( 14, 13, 15 ), PoolIntArray( 15, 13, 16 ), PoolIntArray( 16, 13, 17 ), PoolIntArray( 19, 18, 20 ), PoolIntArray( 20, 18, 21 ), PoolIntArray( 24, 23, 22 ), PoolIntArray( 34, 37, 30 ), PoolIntArray( 30, 38, 25 ), PoolIntArray( 25, 38, 31 ), PoolIntArray( 31, 38, 26 ), PoolIntArray( 26, 38, 27 ), PoolIntArray( 27, 36, 28 ), PoolIntArray( 28, 36, 32 ), PoolIntArray( 32, 36, 33 ), PoolIntArray( 33, 35, 29 ), PoolIntArray( 29, 37, 34 ), PoolIntArray( 37, 36, 30 ), PoolIntArray( 30, 36, 38 ), PoolIntArray( 38, 36, 27 ), PoolIntArray( 36, 35, 33 ), PoolIntArray( 35, 37, 29 ), PoolIntArray( 37, 35, 36 ), PoolIntArray( 41, 40, 42 ), PoolIntArray( 42, 40, 39 ), PoolIntArray( 43, 45, 44 ), PoolIntArray( 47, 46, 48 ), PoolIntArray( 48, 46, 49 ), PoolIntArray( 49, 46, 50 ), PoolIntArray( 52, 51, 53 ), PoolIntArray( 53, 51, 54 ), PoolIntArray( 59, 62, 60 ), PoolIntArray( 60, 62, 55 ), PoolIntArray( 55, 57, 61 ), PoolIntArray( 61, 57, 56 ), PoolIntArray( 57, 63, 58 ), PoolIntArray( 58, 62, 59 ), PoolIntArray( 62, 63, 55 ), PoolIntArray( 55, 63, 57 ), PoolIntArray( 63, 62, 58 ), PoolIntArray( 68, 73, 69 ), PoolIntArray( 69, 72, 70 ), PoolIntArray( 70, 66, 71 ), PoolIntArray( 71, 65, 64 ), PoolIntArray( 65, 71, 66 ), PoolIntArray( 66, 72, 67 ), PoolIntArray( 67, 73, 68 ), PoolIntArray( 73, 72, 69 ), PoolIntArray( 72, 66, 70 ), PoolIntArray( 72, 73, 67 ), PoolIntArray( 75, 74, 76 ), PoolIntArray( 76, 74, 77 ), PoolIntArray( 80, 79, 78 ), PoolIntArray( 82, 81, 83 ), PoolIntArray( 83, 81, 84 ), PoolIntArray( 84, 81, 85 ), PoolIntArray( 85, 81, 86 ), PoolIntArray( 87, 89, 88 ), PoolIntArray( 91, 90, 92 ), PoolIntArray( 92, 90, 93 ), PoolIntArray( 95, 94, 96 ), PoolIntArray( 96, 94, 97 ), PoolIntArray( 97, 94, 98 ), PoolIntArray( 100, 99, 101 ), PoolIntArray( 101, 99, 102 ), PoolIntArray( 105, 104, 103 ), PoolIntArray( 111, 110, 106 ), PoolIntArray( 106, 110, 109 ), PoolIntArray( 106, 109, 108 ), PoolIntArray( 106, 108, 107 ), PoolIntArray( 113, 112, 114 ), PoolIntArray( 114, 112, 116 ), PoolIntArray( 114, 116, 115 ), PoolIntArray( 117, 120, 118 ), PoolIntArray( 118, 120, 119 ), PoolIntArray( 121, 123, 122 ), PoolIntArray( 127, 126, 124 ), PoolIntArray( 124, 126, 125 ), PoolIntArray( 130, 129, 128 ), PoolIntArray( 133, 132, 131 ), PoolIntArray( 135, 134, 136 ), PoolIntArray( 136, 134, 137 ), PoolIntArray( 137, 134, 138 ), PoolIntArray( 140, 139, 141 ), PoolIntArray( 141, 139, 142 ), PoolIntArray( 143, 146, 147 ), PoolIntArray( 147, 146, 144 ), PoolIntArray( 144, 146, 145 ), PoolIntArray( 156, 157, 153 ), PoolIntArray( 153, 157, 154 ), PoolIntArray( 154, 157, 148 ), PoolIntArray( 148, 157, 155 ), PoolIntArray( 155, 157, 149 ), PoolIntArray( 149, 157, 150 ), PoolIntArray( 150, 157, 151 ), PoolIntArray( 151, 157, 152 ), PoolIntArray( 152, 157, 156 ), PoolIntArray( 160, 163, 161 ), PoolIntArray( 161, 163, 158 ), PoolIntArray( 158, 163, 162 ), PoolIntArray( 162, 160, 159 ), PoolIntArray( 160, 162, 163 ), PoolIntArray( 164, 167, 168 ), PoolIntArray( 168, 167, 165 ), PoolIntArray( 165, 167, 166 ), PoolIntArray( 170, 169, 171 ), PoolIntArray( 171, 169, 174 ), PoolIntArray( 171, 174, 173 ), PoolIntArray( 171, 173, 172 ), PoolIntArray( 178, 177, 175 ), PoolIntArray( 175, 177, 176 ), PoolIntArray( 181, 180, 179 ), PoolIntArray( 183, 182, 184 ), PoolIntArray( 184, 182, 187 ), PoolIntArray( 184, 187, 185 ), PoolIntArray( 185, 187, 186 ), PoolIntArray( 188, 191, 189 ), PoolIntArray( 189, 191, 190 ), PoolIntArray( 194, 193, 195 ), PoolIntArray( 195, 193, 192 ), PoolIntArray( 196, 198, 197 ), PoolIntArray( 201, 200, 202 ), PoolIntArray( 202, 200, 199 ), PoolIntArray( 205, 204, 203 ), PoolIntArray( 210, 215, 211 ), PoolIntArray( 211, 215, 212 ), PoolIntArray( 212, 214, 206 ), PoolIntArray( 206, 214, 207 ), PoolIntArray( 207, 214, 213 ), PoolIntArray( 213, 215, 208 ), PoolIntArray( 208, 215, 209 ), PoolIntArray( 209, 215, 210 ), PoolIntArray( 215, 214, 212 ), PoolIntArray( 214, 215, 213 ), PoolIntArray( 217, 219, 218 ), PoolIntArray( 218, 219, 216 ), PoolIntArray( 221, 220, 222 ), PoolIntArray( 222, 220, 223 ), PoolIntArray( 225, 224, 226 ), PoolIntArray( 226, 224, 227 ), PoolIntArray( 231, 230, 228 ), PoolIntArray( 228, 230, 229 ), PoolIntArray( 234, 233, 232 ), PoolIntArray( 236, 238, 239 ), PoolIntArray( 239, 238, 237 ), PoolIntArray( 237, 238, 235 ), PoolIntArray( 242, 241, 240 ), PoolIntArray( 243, 245, 244 ), PoolIntArray( 247, 246, 248 ), PoolIntArray( 248, 246, 251 ), PoolIntArray( 248, 251, 250 ), PoolIntArray( 248, 250, 249 ) ]
 
 [sub_resource type="ProceduralSky" id=2]
-sun_latitude = 30.0
-sun_angle_min = 0.0
-sun_energy = 50.0
+ground_bottom_color = Color( 0, 0, 0, 1 )
+ground_horizon_color = Color( 0, 0, 0, 1 )
 
 [sub_resource type="Environment" id=3]
 background_mode = 2
 background_sky = SubResource( 2 )
-ssao_radius = 10.0
-ssao_intensity = 5.0
-ssao_quality = 0
-glow_intensity = 0.0
 
 [node name="map" instance=ExtResource( 1 )]
 
 [node name="stage" parent="." index="0"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0 )
 navmesh = SubResource( 1 )
 
 [node name="rock_wall_1" parent="stage" index="0" instance=ExtResource( 5 )]
@@ -36,60 +32,81 @@ transform = Transform( -0.0234482, 0, -0.499449, 0, 0.344113, 0, 0.499449, 0, -0
 [node name="rock_wall_2" parent="stage" index="1" instance=ExtResource( 5 )]
 transform = Transform( -0.488332, 0, -0.0751693, 0, 0.416233, 0, 0.107385, 0, -0.341832, 6.79389, 0, -11.3736 )
 
-[node name="rock_wall_7" parent="stage" index="2" instance=ExtResource( 5 )]
-transform = Transform( -0.225292, 0, 0.127384, 0, 0.209974, 0, -0.234736, 0, -0.122259, 1.54632, 1.98572, -6.82365 )
+[node name="rock_wall_18" parent="stage" index="2" instance=ExtResource( 5 )]
+transform = Transform( -0.464653, 0, 0.129258, 0, 0.416233, 0, -0.184654, 0, -0.325257, -2.62449, 1.44553, -16.7033 )
 
-[node name="rock_wall_8" parent="stage" index="3" instance=ExtResource( 5 )]
-transform = Transform( -0.101015, 0, 0.0482571, 0, 0.115919, 0, -0.105249, 0, -0.0463157, 1.74345, -0.629143, -2.68591 )
+[node name="rock_wall_19" parent="stage" index="3" instance=ExtResource( 5 )]
+transform = Transform( -0.375321, 0, 0.231248, 0, 0.416233, 0, -0.330354, 0, -0.262724, -2.45602, 1.51277, 16.4749 )
 
-[node name="rock_wall_9" parent="stage" index="4" instance=ExtResource( 5 )]
+[node name="rock_wall_7" parent="stage" index="4" instance=ExtResource( 5 )]
+transform = Transform( -0.225292, -0.023424, 0.125852, 0, 0.207449, 0.0273007, -0.234736, 0.0224816, -0.120789, 1.8845, -1.0093, -7.14823 )
+
+[node name="rock_wall_15" parent="stage" index="5" instance=ExtResource( 5 )]
+transform = Transform( -0.225292, 0, 0.127384, 0, 0.209974, 0, -0.234736, 0, -0.122259, 4.19172, -1.97642, 8.1702 )
+
+[node name="rock_wall_16" parent="stage" index="6" instance=ExtResource( 5 )]
+transform = Transform( -0.263937, 3.15498e-05, -0.103242, 0.0162147, 0.209214, -0.0121622, 0.189557, -0.0178523, -0.142713, -1.7504, -0.944489, 13.1446 )
+
+[node name="rock_wall_8" parent="stage" index="7" instance=ExtResource( 5 )]
+transform = Transform( -0.0991735, -0.0152567, 0.0482571, -0.027728, 0.113806, 1.58139e-10, -0.10333, -0.0158961, -0.0463158, 1.74345, -0.629143, -2.68591 )
+
+[node name="rock_wall_17" parent="stage" index="8" instance=ExtResource( 5 )]
+transform = Transform( -0.260362, -0.0157931, 0.12669, -0.072795, 0.117808, 5.46044e-09, -0.271275, -0.0164551, -0.121594, -4.51434, -0.12471, 13.5888 )
+
+[node name="rock_wall_9" parent="stage" index="9" instance=ExtResource( 5 )]
 transform = Transform( -0.0263244, 0, 0.0657892, 0, 0.115919, 0, -0.143486, 0, -0.0120698, 2.43937, 2.70604, -3.34437 )
 
-[node name="rock_wall_12" parent="stage" index="5" instance=ExtResource( 5 )]
+[node name="rock_wall_12" parent="stage" index="10" instance=ExtResource( 5 )]
 transform = Transform( -0.00100398, 0, 0.0668866, 0, 0.184314, 0, -0.231952, 0, -0.000289505, 4.63124, 6.65342, 0.573203 )
 
-[node name="rock_wall_10" parent="stage" index="6" instance=ExtResource( 5 )]
-transform = Transform( -0.0263244, 0, 0.0657892, 0, 0.143692, 0, -0.143486, 0, -0.0120698, 4.64161, 1.54993, 3.03665 )
+[node name="rock_wall_10" parent="stage" index="11" instance=ExtResource( 5 )]
+transform = Transform( -0.0263244, -0.0120919, 0.065548, 0, 0.143165, 0.00572261, -0.143486, 0.00221842, -0.0120256, 4.64161, 1.54993, 3.03665 )
 
-[node name="rock_wall_11" parent="stage" index="7" instance=ExtResource( 5 )]
-transform = Transform( 0.105574, 0, 0.0461597, 0, 0.115919, 0, -0.100674, 0, 0.0484065, 3.42326, 0.553039, 3.83362 )
+[node name="rock_wall_11" parent="stage" index="12" instance=ExtResource( 5 )]
+transform = Transform( 0.104144, -0.0137622, 0.0461598, 0.0239316, 0.114349, -1.64583e-10, -0.0993101, 0.0131235, 0.0484064, 3.42326, 0.553039, 3.83362 )
 
-[node name="rock_wall_4" parent="stage" index="8" instance=ExtResource( 5 )]
+[node name="rock_wall_13" parent="stage" index="13" instance=ExtResource( 5 )]
+transform = Transform( 0.0836779, 0, -0.0547895, 0, 0.115919, 0, 0.119495, 0, 0.0383669, -4.32675, 2.07088, -7.75317 )
+
+[node name="rock_wall_14" parent="stage" index="14" instance=ExtResource( 5 )]
+transform = Transform( -0.0278754, 0, 0.0656548, 0, 0.115919, 0, -0.143192, 0, -0.0127811, -6.32665, 0.662194, -10.75 )
+
+[node name="rock_wall_4" parent="stage" index="15" instance=ExtResource( 5 )]
 transform = Transform( 0.0296786, 0, 0.275709, 0, 0.416233, 0, -0.349266, 0, 0.023428, 8.69856, -0.310745, 8.41915 )
 
-[node name="rock_wall_5" parent="stage" index="9" instance=ExtResource( 5 )]
+[node name="rock_wall_5" parent="stage" index="16" instance=ExtResource( 5 )]
 transform = Transform( -0.325074, 0, 0.216463, 0, 0.344113, 0, -0.215546, 0, -0.326459, 4.79472, 0.709135, 12.333 )
 
-[node name="rock_wall_3" parent="stage" index="10" instance=ExtResource( 6 )]
-transform = Transform( -0.363072, 0, 0.0287462, 0, 0.255222, 0, -0.0287462, 0, -0.363072, 9.66081, 4.58738, -1.29211 )
+[node name="rock_wall_3" parent="stage" index="17" instance=ExtResource( 6 )]
+transform = Transform( -0.347019, 0, 0.110568, 0, 0.255222, 0, -0.110568, 0, -0.347019, 12.7005, 4.58738, -0.323617 )
 
-[node name="rock_wall_6" parent="stage" index="11" instance=ExtResource( 6 )]
+[node name="rock_wall_6" parent="stage" index="18" instance=ExtResource( 6 )]
 transform = Transform( 0.0783325, 1.01343e-08, -0.0173315, 1.21139e-08, -0.0609342, -7.01366e-09, -0.0173315, 3.21358e-09, -0.0783325, 4.79403, 5.97302, 0.0958843 )
 
-[node name="floor_5" parent="stage" index="12" instance=ExtResource( 4 )]
-transform = Transform( -1.63558, 0, 0.0775045, 0, 1, 0, -0.0775045, 0, -1.63558, -3.7936, -0.473621, 0.988552 )
+[node name="floor_5" parent="stage" index="19" instance=ExtResource( 4 )]
+transform = Transform( -1.63558, 0, 0.0775045, 0, 1, 0, -0.0775045, 0, -1.63558, -5.83154, -0.473621, 1.21981 )
 
-[node name="floor_2" parent="stage" index="13" instance=ExtResource( 7 )]
+[node name="floor_2" parent="stage" index="20" instance=ExtResource( 7 )]
 transform = Transform( -0.370864, 0, -0.928683, 0, 1, 0, 0.928683, 0, -0.370864, -2.55463, 0.552383, -9.81807 )
 
-[node name="floor_7" parent="stage" index="14" instance=ExtResource( 7 )]
+[node name="floor_7" parent="stage" index="21" instance=ExtResource( 7 )]
 transform = Transform( 0.550945, 0, 0.544854, 0, 1, 0, -0.834538, 0, 0.359702, -8.12756, -0.0593166, -10.037 )
 
-[node name="floor_3" parent="stage" index="15" instance=ExtResource( 7 )]
-transform = Transform( -0.0399743, 0, 0.999197, 0, 1, 0, -0.999197, 0, -0.0399743, 3.24091, 0.552383, 7.29669 )
+[node name="floor_3" parent="stage" index="22" instance=ExtResource( 7 )]
+transform = Transform( 0.157934, 0, 0.987446, 0, 1.51168, 0, -0.987446, 0, 0.157934, 2.95091, -0.148667, 8.05878 )
 
-[node name="floor_4" parent="stage" index="16" instance=ExtResource( 7 )]
+[node name="floor_4" parent="stage" index="23" instance=ExtResource( 7 )]
 transform = Transform( -0.0399751, 0, 0.999196, 0, 1, 0, -0.999196, 0, -0.0399751, 2.62074, 0.227319, 12.055 )
 
-[node name="floor_6" parent="stage" index="17" instance=ExtResource( 7 )]
-transform = Transform( 0.145996, 0, 0.98928, 0, 1, 0, -0.98928, 0, 0.145996, -6.05352, -0.265254, 12.1019 )
+[node name="floor_6" parent="stage" index="24" instance=ExtResource( 7 )]
+transform = Transform( 0.221895, 0, 0.98928, 0, 1, 0, -1.50358, 0, 0.145996, -6.17496, -0.265253, 12.9248 )
+
+[node name="world_environment" type="WorldEnvironment" parent="stage" index="25"]
+environment = SubResource( 3 )
 
 [node name="spawn_point" type="Position3D" parent="interactive_objects" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.732394, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.732394, 15.8372 )
 
 [node name="objects" type="Spatial" parent="interactive_objects" index="1"]
 script = ExtResource( 3 )
 party_scene = ExtResource( 8 )
-
-[node name="world_environment" parent="." index="2"]
-environment = SubResource( 3 )
